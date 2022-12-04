@@ -1,4 +1,7 @@
 <?php
+/**
+ * ENDPOINT TO GET ALL HOTELS
+ */
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -38,7 +41,6 @@ curl_setopt($ch, CURLOPT_URL, $hotels_url);
 curl_setopt($ch, CURLOPT_POST, 0);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
     'Authorization: Bearer ' .$token,
-    // 'X-Apple-Store-Front: 143444,12'
 ));
 $hotels = json_decode(curl_exec($ch), true);
 

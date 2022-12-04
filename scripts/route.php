@@ -13,8 +13,5 @@ $b = $_POST['coords'];
 
 $type = $_POST['type'];
 
-// if(strcmp($type), 'zastavka') {
-
-// }
 
 echo json_encode($zastavky, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);
